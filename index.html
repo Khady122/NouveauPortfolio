@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MON PORTFOLIO</title>
+  <!-- Intégration de Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-black">
+  
+  <!-- En-tête -->
+  <header class="bg-blue-500 text-black p-5 text-center">
+    <div class="p-5">
+      <img src="/ma photo profil.jpg" alt="ma photo profil" class="w-64 h-64 rounded-full object-cover border-4 border-white mx-auto mb-4">
+      <h1 class="text-4xl mb-2">KHADY NDIAYE</h1>
+      <p class="text-lg mb-4">Je suis un designer passionné et créatif, mais aussi de réseau informatique.</p>
+      <div class="flex flex-wrap justify-center gap-2">
+        <a href="#a-propos" class="bg-gray-400 text-black py-2 px-4 rounded hover:bg-gray-500 transition-colors">À PROPOS DE MOI</a>
+        <a href="#projets" class="bg-gray-400 text-black py-2 px-4 rounded hover:bg-gray-500 transition-colors">MES PROJETS</a>
+        <a href="#competences" class="bg-gray-400 text-black py-2 px-4 rounded hover:bg-gray-500 transition-colors">COMPETENCES</a>
+        <a href="#experience" class="bg-gray-400 text-black py-2 px-4 rounded hover:bg-gray-500 transition-colors">EXPERIENCES</a>
+        <a href="/mon cv.pdf" download="mon-cv.pdf" target="_blank" class="bg-gray-400 text-black py-2 px-4 rounded hover:bg-gray-500 transition-colors">VOICI MON CV</a>
+        <a href="#contacts" class="bg-gray-400 text-black py-2 px-4 rounded hover:bg-gray-500 transition-colors">CONTACTER MOI</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Image d'accueil en plein écran -->
+  <div class="w-full h-screen overflow-hidden relative">
+    <img src="/mon image.jpeg" alt="Image pleine page" class="w-full h-full object-cover">
+  </div>
+
+  <!-- Contenu principal -->
+  <main class="p-10">
+    <!-- Section À propos de moi -->
+    <section id="a-propos" class="mb-10">
+      <h2 class="text-3xl text-center mb-4 border-b-2 border-gray-400 pb-2">À propos de moi</h2>
+      <p class="text-2xl text-center leading-relaxed max-w-3xl mx-auto p-4 bg-gray-50 rounded shadow">
+        Passionnée de réseau informatique, je suis toujours à la recherche de nouvelles technologies et de sécurité des systèmes. Mon objectif est de garantir des réseaux performants, fiables et sécurisés.
+      </p>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="mb-10">
+      <h2 class="text-3xl text-center mb-4 border-b-2 border-gray-400 pb-2">Projets</h2>
+      <div class="flex flex-wrap gap-5 justify-center">
+        <div class="bg-white p-4 shadow text-center">
+          <img src="/HAPPY KIDS.jpeg" alt="HAPPY KIDS" class="mx-auto mb-2 max-w-xs">
+          <p class="text-lg">
+            « Bambinerie » est un site web dédié à HAPPY KIDS, proposant des articles, des conseils et des services adaptés aux parents et aux tout-petits.
+          </p>
+        </div>
+        <div class="bg-white p-4 shadow text-center">
+          <img src="/Aby's vaisselles.jpeg" alt="Aby's vaisselles" class="mx-auto mb-2 max-w-xs">
+          <p class="text-lg">
+            « ABys Vaisselle » est une boutique spécialisée dans la vente de vaisselle élégante et de qualité, allant des assiettes raffinées aux ensembles de couverts modernes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="mb-10">
+      <h2 class="text-3xl text-center mb-4 border-b-2 border-gray-400 pb-2">Compétences</h2>
+      <ul class="flex flex-wrap gap-5 justify-center">
+        <li><img src="/Mysql.jpg" alt="Mysql" class="w-20"></li>
+        <li><img src="/HTML.jpg" alt="HTML" class="w-20"></li>
+        <li><img src="/CSS.jpg" alt="CSS" class="w-20"></li>
+        <li><img src="/JAVA.jpg" alt="JAVA" class="w-20"></li>
+      </ul>
+    </section>
+
+    <!-- Section Expérience -->
+    <section id="experience" class="mb-10">
+      <h2 class="text-3xl text-center mb-4 border-b-2 border-gray-400 pb-2">Expérience</h2>
+      <p class="text-2xl text-center leading-relaxed max-w-3xl mx-auto p-4 bg-gray-50 rounded shadow">
+        Expérience Développeur de site web et Maintenance : Lors de mon stage, en première année au TGI, j'ai acquis des connaissances en développement et maintenance de sites web responsives en utilisant HTML, CSS, JavaScript (React, Vue.js), ainsi qu’en installation, configuration et maintenance d'infrastructures réseau (LAN, WAN, VPN).
+      </p>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contacts" class="mb-10">
+      <h2 class="text-3xl text-center mb-4 border-b-2 border-gray-400 pb-2">Contactez-moi</h2>
+      <form action="mailto:ndiayekhadyndiaye10@gmail.com" method="post" enctype="text/plain" class="flex flex-col gap-4 max-w-xl mx-auto bg-white p-6 shadow">
+        <label for="name" class="text-lg">Nom :</label>
+        <input type="text" id="name" name="name" required class="p-2 border border-gray-300 rounded">
+        
+        <label for="prenom" class="text-lg">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required class="p-2 border border-gray-300 rounded">
+        
+        <label for="email" class="text-lg">Email :</label>
+        <input type="email" id="email" name="email" required class="p-2 border border-gray-300 rounded">
+        
+        <label for="message" class="text-lg">Message :</label>
+        <textarea id="message" name="message" required class="p-2 border border-gray-300 rounded"></textarea>
+        
+        <input type="submit" value="Envoyer" class="bg-gray-400 text-white p-2 rounded hover:bg-blue-500 transition-colors cursor-pointer">
+      </form>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="bg-blue-500 text-white text-center p-5">
+    <p>&copy; 2023 KHADY NDIAYE. Tous droits réservés.</p>
+    <div class="flex justify-center gap-4 mt-2">
+      <a href="https://www.insta.com" target="_blank">
+        <img src="/insta.jpeg" alt="Insta" class="w-8 h-8 hover:scale-110 transition-transform">
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="/facebook.jpeg" alt="Facebook" class="w-8 h-8 hover:scale-110 transition-transform">
+      </a>
+      <a href="https://www.twiter.com" target="_blank">
+        <img src="/twiter.png" alt="Twiter" class="w-8 h-8 hover:scale-110 transition-transform">
+      </a>
+      <a href="https://www.Tiktok.com" target="_blank">
+        <img src="/Tiktok.png" alt="Tiktok" class="w-8 h-8 hover:scale-110 transition-transform">
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
